@@ -1,0 +1,49 @@
+#+TITLE: Linux tricks for everyday use
+
+* Git 操作技巧总结
+
+** git查看git仓库状况以及移除修改仓库内文件的方法
+git status 查看git仓库和本地仓库的文件状态
+git checkout -- <file> 移除本地仓库里没有add的修改 
+git checkout -- . 为移除所有本地仓库里没有add的修改
+git clean -df 移除本地仓库里没有add的所有新增删除文件
+git rm --cached <file> untrack一个add在暂存区的文件
+git rm -r --cached <file> untrack一个add在暂存区的文件夹
+
+** git查看提交历史与git版本回退
+git reset --hard commit_id 回退到相应的提交版本
+git log可以查看提交历史，以便确定要回退到哪个版本。
+git reflog查看命令历史，以便确定要回到未来的哪个版本。
+
+** git处理工作区的代码改动与减少merge节点的方法
+git add -u（常用） 将已经在版本库里的文件加到缓存区
+git tag 为关键commit加tag
+git stash（常用） 当在不正确的分支修改以后，stash到缓存区，类似于add，然后在checkout到正确的分支里载git pop
+git blame 查看每一个文件哪一行有改变
+tig git的命令行交互程序
+tmux 多窗口系统（远程也可以使用）
+合理使用git rabase，减少无意义的merge节点
+
+** git新建/查看/切换/删除/覆盖分支
+git checkout -b dev 新建并切换到本地dev分支
+git branch -d dev  # 删除本地dev分支
+git pull origin dev 本地分支与远程分支相关联
+git branch 查看分支, 这时会看到master和dev，而且master上会有一个星号
+
++ 在本地新建分支并推送到远程流程
+  1. git checkout -b test 
+  2. git push origin test 这样远程仓库中也就创建了一个test分支
+
+git checkout dev  # 切换到dev远程分支, 注意：在分支切换之前最好先commit全部的改变，除非你真的知道自己在做什么
+
++ 强制覆盖分支流程：
+  1. git checkout master 将当前分支切换到主分支
+  2. git reset -hard test 将主分支重置为test分支
+  3. git push origin master -force 将重置后的master分支强制推送到远程仓库
+
+** git查看/增加与克隆远程仓库
+git remote -v 查看已有的远程仓库
+git remote add origin https://github.com/MachineLearner1992/notes.git 添加一个origin的远程仓库
+git clone https://github.com/MachineLearner1992/notes.git 从http上克隆一个代码仓库
+git clone --recursive https://github.com/MachineLearner1992/notes.git 从http上克隆一个代码仓库, 代码仓库里包含代码仓库，递归克隆
+
