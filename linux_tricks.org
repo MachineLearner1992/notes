@@ -47,3 +47,19 @@ git remote add origin https://github.com/MachineLearner1992/notes.git 添加一�
 git clone https://github.com/MachineLearner1992/notes.git 从http上克隆一个代码仓库
 git clone --recursive https://github.com/MachineLearner1992/notes.git 从http上克隆一个代码仓库, 代码仓库里包含代码仓库，递归克隆
 
+
+* Linux(Ubuntu) install process
+
+** 1. Create a user account(if needed)
+
+** 2. Install zsh
+1. sudo apt-get install zsh: install zsh
+2. sudo apt-get install git: install git
+3. git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+4. cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc: change the .zshrc as the template
+5. chsh -s /bin/zsh: change the default shell
+   
+* Connecting to AliCloud
+
+** ssh IP for Alicloud
+public IP: 47.99.111.27
