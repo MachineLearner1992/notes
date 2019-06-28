@@ -33,6 +33,8 @@ git branch 查看分支, 这时会看到master和dev，而且master上会有一�
 + 在本地新建分支并推送到远程流程
   1. git checkout -b test 
   2. git push origin test 这样远程仓库中也就创建了一个test分支
++ 在本地checkout到本地不存在的远程分支
+  1. git checkout -b test origin/test
 
 git checkout dev  # 切换到dev远程分支, 注意：在分支切换之前最好先commit全部的改变，除非你真的知道自己在做什么
 
@@ -40,7 +42,7 @@ git checkout dev  # 切换到dev远程分支, 注意：在分支切换之前最�
   1. git checkout master 将当前分支切换到主分支
   2. git reset -hard test 将主分支重置为test分支
   3. git push origin master -force 将重置后的master分支强制推送到远程仓库
-
+     
 ** git查看/增加与克隆远程仓库
 git remote -v 查看已有的远程仓库
 git remote add origin https://github.com/MachineLearner1992/notes.git 添加一个origin的远程仓库
@@ -48,12 +50,23 @@ git clone https://github.com/MachineLearner1992/notes.git 从http上克隆一个
 git clone --recursive https://github.com/MachineLearner1992/notes.git 从http上克隆一个代码仓库, 代码仓库里包含代码仓库，递归克隆
 
 
+* linux 命令行技巧
+
+** 进程与网络命令行技巧
++ 查看端口使用以及对应的进程号: lsof -i :端口号
+
+
+
 * Linux(Ubuntu) install process
 
 ** 1. Create a user account(if needed)
-例如：sudo useradd -d "/home/tt" -m tt 
-
-
++ 增加新用户：sudo useradd -d "/home/tt" -m tt #-m作用为没有目录默认创建目录
++ 设置密码：passwd username
++ 为用户指定shell usermod -s /bin/bash username
++ 为该用户指定用户主目录 usermod -d /home/username username
++ 为该用户增加sudo权限
+  1. 执行 visudo 命令
+  2. 在root ALL=(ALL:ALL) ALL 下面加入 username ALL=(ALL:ALL) ALL
 
 ** 2. Install zsh
 1. sudo apt-get install zsh: install zsh
