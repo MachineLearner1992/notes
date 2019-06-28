@@ -51,6 +51,9 @@ git clone --recursive https://github.com/MachineLearner1992/notes.git 从http上
 * Linux(Ubuntu) install process
 
 ** 1. Create a user account(if needed)
+例如：sudo useradd -d "/home/tt" -m tt 
+
+
 
 ** 2. Install zsh
 1. sudo apt-get install zsh: install zsh
@@ -59,7 +62,17 @@ git clone --recursive https://github.com/MachineLearner1992/notes.git 从http上
 4. cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc: change the .zshrc as the template
 5. chsh -s /bin/zsh: change the default shell
    
+** 3. 安装搜狗拼音输入法方法
+1. 先安装fcitx： sudo apt install fcitx
+2. 再安装fcitx的必要插件：sudo apt install fcitx
+3. 然后在设置里找到Region & language，在里面找到Manage Installed Languages，按照以下图片操作 
+file:[[./language-setting.png ]]file:[[./apply-setting.png]] 
+5. 安装sogou拼音，下载deb包，sudo dpkg -i sogoupinyin_2.2.0.0108_amd64.deb
+   
 * Connecting to AliCloud
 
 ** ssh IP for Alicloud
 public IP: 47.99.111.27
+
+** ssh IP for peter Alicloud
+public: IP: 47.103.67.175
