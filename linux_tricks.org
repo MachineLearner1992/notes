@@ -79,7 +79,8 @@ git clone --recursive https://github.com/MachineLearner1992/notes.git 从http上
 1. 先安装fcitx： sudo apt install fcitx
 2. 再安装fcitx的必要插件：sudo apt install fcitx
 3. 然后在设置里找到Region & language，在里面找到Manage Installed Languages，按照以下图片操作 
-file:[[./language-setting.png ]]file:[[./apply-setting.png]] 
+   [./pic/language-setting.png]
+   [./pic/apply-setting.png]
 5. 安装sogou拼音，下载deb包，sudo dpkg -i sogoupinyin_2.2.0.0108_amd64.deb
    
 * Connecting to AliCloud
