@@ -50,6 +50,36 @@ git clone https://github.com/MachineLearner1992/notes.git 从http上克隆一个
 git clone --recursive https://github.com/MachineLearner1992/notes.git 从http上克隆一个代码仓库, 代码仓库里包含代码仓库，递归克隆
 
 
+* vs code tricks
+
+** modified user settings
+add the following parts in the root section of settings.json(in the system path)
++ settings.json system path
+  + for Mac: $HOME/Library/Application Support/Code/User/settings.json
+  + for linux: $HOME/.config/Code/User/settings.json
+
+"editor.fontSize": 16,
+"editor.wordWrap": "on",
+"terminal.integrated.fontSize": 14,
+"terminal.integrated.fontWeight": "bold",
+"debug.console.fontSize": 15,
+"editor.fontLigatures": true,
+"workbench.colorTheme": "Solarized Dark",
+"editor.fontWeight": "bold",
+"python.dataScience.sendSelectionToInteractiveWindow": true,
+"python.linting.enabled": false
+
+** modified workspace user settings
+add the following parts in the root section of settings.json(in the workspace .vscode file, create if not exists)
+
+"editor.wordWrap": "off", 
+"python.pythonPath": "/Users/didi/anaconda3/envs/anaconda2/bin/python",
+"python.condaPath": "/Users/didi/anaconda3/envs/anaconda2/bin/conda",
+"python.autoComplete.extraPaths": ["./gen-py"],
+"python.linting.enabled": true,
+"python.linting.pylintEnabled": true,
+"python.linting.pylintPath": "/Users/didi/anaconda3/envs/anaconda2/bin/pylint" 
+
 * linux 命令行技巧
 
 ** 进程与网络命令行技巧
