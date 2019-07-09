@@ -7,8 +7,16 @@
 
 * 自然语言处理
 
+** Language Model解析
++ 漫谈 Language Model (1): 原理篇 http://blog.pluskid.org/?p=352 
++ 深入理解语言模型 Language Model https://zhuanlan.zhihu.com/p/52061158
++ Bag-of-words模型入门 https://zhuanlan.zhihu.com/p/29933242 
++ 理解 Word2Vec 之 Skip-Gram 模型 https://zhuanlan.zhihu.com/p/27234078
+
+
 ** Attention 模型
 + 模型汇总24 - 深度学习中Attention Mechanism详细介绍：原理、分类及应用 https://zhuanlan.zhihu.com/p/31547842
++ 深度解析注意力模型(attention model) --- image_caption的应用 https://segmentfault.com/a/1190000011744246
 + 深度学习中的注意力模型（2017版）https://zhuanlan.zhihu.com/p/37601161
 + 干货｜如何在语言翻译中理解Attention Mechanism？ http://www.sohu.com/a/156018349_642762
 + 计算机视觉与NLP结合解释Attention Model https://zhuanlan.zhihu.com/p/56501461
