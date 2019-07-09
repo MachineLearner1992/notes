@@ -90,7 +90,7 @@ add the following parts in the root section of settings.json(in the workspace .v
 * Linux(Ubuntu) install process
 
 ** 1. Create a user account(if needed)
-+ 增加新用户：useradd username
++ 增加新用户：sudo useradd -d "/home/tt" -m tt #-m作用为没有目录默认创建目录
 + 设置密码：passwd username
 + 为用户指定shell usermod -s /bin/bash username
 + 为该用户指定用户主目录 usermod -d /home/username username
@@ -105,7 +105,18 @@ add the following parts in the root section of settings.json(in the workspace .v
 4. cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc: change the .zshrc as the template
 5. chsh -s /bin/zsh: change the default shell
    
+** 3. 安装搜狗拼音输入法方法
+1. 先安装fcitx： sudo apt install fcitx
+2. 再安装fcitx的必要插件：sudo apt install fcitx
+3. 然后在设置里找到Region & language，在里面找到Manage Installed Languages，按照以下图片操作 
+   [./pic/language-setting.png]
+   [./pic/apply-setting.png]
+5. 安装sogou拼音，下载deb包，sudo dpkg -i sogoupinyin_2.2.0.0108_amd64.deb
+   
 * Connecting to AliCloud
 
 ** ssh IP for Alicloud
 public IP: 47.99.111.27
+
+** ssh IP for peter Alicloud
+public: IP: 47.103.67.175

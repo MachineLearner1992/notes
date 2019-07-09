@@ -1,0 +1,18 @@
+#+TITLE: 机器学习网上参考材料
+
+* 计算机视觉
+
+** Attention 模型
++ [计算机视觉]深入理解Attention机制 https://blog.csdn.net/yideqianfenzhiyi/article/details/79422857
+
+* 自然语言处理
+
+** Attention 模型
++ 模型汇总24 - 深度学习中Attention Mechanism详细介绍：原理、分类及应用 https://zhuanlan.zhihu.com/p/31547842
++ 深度学习中的注意力模型（2017版）https://zhuanlan.zhihu.com/p/37601161
++ 干货｜如何在语言翻译中理解Attention Mechanism？ http://www.sohu.com/a/156018349_642762
++ 计算机视觉与NLP结合解释Attention Model https://zhuanlan.zhihu.com/p/56501461
++ 深入浅出，详细理解Attention Model的基本原理！ https://www.jianshu.com/p/ff968920ec73 
+  
+** 基于Attention的Transformer Model
++ Transformer结构及其应用详解--GPT、BERT、MT-DNN、GPT-2 https://zhuanlan.zhihu.com/p/69290203
