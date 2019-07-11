@@ -9,6 +9,10 @@
 
 ** SVM资料
 + SVM支持向量机-拉格朗日乘子与对偶问题（1）https://blog.csdn.net/bit_666/article/details/79865225
+  
+** 统计资料
++ 统计学基础--假设检验 https://blog.csdn.net/andy_shenzl/article/details/81453509
++ 统计学入门（7/7）——假设检验 https://blog.csdn.net/Yi_jia_yi/article/details/81139679
 
 * 计算机视觉
 
