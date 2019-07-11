@@ -1,5 +1,10 @@
 #+TITLE: 机器学习网上参考材料
 
+* 机器学习
+
+** SVM资料
++ SVM支持向量机-拉格朗日乘子与对偶问题（1）https://blog.csdn.net/bit_666/article/details/79865225
+
 * 计算机视觉
 
 ** Attention 模型
