@@ -7,6 +7,9 @@
 + softmax的log似然代价函数（公式求导）https://blog.csdn.net/u014313009/article/details/51045303
 + 卷积神经网络系列之softmax loss对输入的求导推导 https://blog.csdn.net/weixin_36411839/article/details/81835571
 
+** SVM资料
++ SVM支持向量机-拉格朗日乘子与对偶问题（1）https://blog.csdn.net/bit_666/article/details/79865225
+
 * 计算机视觉
 
 ** Attention 模型
