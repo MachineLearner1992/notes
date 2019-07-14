@@ -2,6 +2,12 @@
 
 * 机器学习基础 
 
+** 综合机器学习
++ 算法工程师养成记（附精选面试题）http://www.ijiandao.com/2b/baijia/157038.html
+
+** Adaboost 
++ 理解AdaBoost算法 https://www.itcodemonkey.com/article/8588.html
+  
 ** 神经网络
 + 详解机器学习中的熵、条件熵、相对熵和交叉熵 https://www.cnblogs.com/kyrieng/p/8694705.html
 + softmax的log似然代价函数（公式求导）https://blog.csdn.net/u014313009/article/details/51045303
@@ -38,3 +44,37 @@
   
 ** 基于Attention的Transformer Model
 + Transformer结构及其应用详解--GPT、BERT、MT-DNN、GPT-2 https://zhuanlan.zhihu.com/p/69290203
+  
+* 学习流程
+
+** 机器学习基础
+
+*** SIFT特征与HOG特征的表达式与特性
+
+*** 最小二乘推导
+
+*** 逻辑回归推导
+
+[./algo-pic/logistic_regression.png]
+
+*** 二层神经网络bp算法推导
+
+[./algo-pic/bp.png]
+
+*** Softmax bp算法推导
+
+[./algo-pic/softmax.png]
+
+*** SVM算法推导
+
+*** AdaBoost算法推导
+
+[./algo-pic/adaboost.png]
+
+*** GBDT算法推导与特点
+
+** 计算机视觉
+
+
+** 自然语言处理
+
