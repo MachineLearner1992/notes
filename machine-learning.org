@@ -1,9 +1,36 @@
 #+TITLE: 机器学习网上参考材料
 
-* 机器学习
+* 算法与数据结构
+
+** 动态规划
++ 动态规划经典题目汇总 https://blog.csdn.net/dengwei4321/article/details/14137295
++ 面试中的动态规划 https://blog.csdn.net/qq_15288217/article/details/80693352
++ 面试经典动态规划问题 https://blog.csdn.net/u013007900/article/details/56298701
+
+* 大数据框架
+
+** Flink技术关键
++ Flink案例代码，面试题 https://blog.csdn.net/qq_31866793/article/details/90755173
+
+* 机器学习基础 
+
+** 综合机器学习
++ 算法工程师养成记（附精选面试题）http://www.ijiandao.com/2b/baijia/157038.html
+
+** Adaboost 
++ 理解AdaBoost算法 https://www.itcodemonkey.com/article/8588.html
+  
+** 神经网络
++ 详解机器学习中的熵、条件熵、相对熵和交叉熵 https://www.cnblogs.com/kyrieng/p/8694705.html
++ softmax的log似然代价函数（公式求导）https://blog.csdn.net/u014313009/article/details/51045303
++ 卷积神经网络系列之softmax loss对输入的求导推导 https://blog.csdn.net/weixin_36411839/article/details/81835571
 
 ** SVM资料
 + SVM支持向量机-拉格朗日乘子与对偶问题（1）https://blog.csdn.net/bit_666/article/details/79865225
+  
+** 统计资料
++ 统计学基础--假设检验 https://blog.csdn.net/andy_shenzl/article/details/81453509
++ 统计学入门（7/7）——假设检验 https://blog.csdn.net/Yi_jia_yi/article/details/81139679
 
 * 计算机视觉
 
@@ -33,3 +60,36 @@
   
 ** 基于Attention的Transformer Model
 + Transformer结构及其应用详解--GPT、BERT、MT-DNN、GPT-2 https://zhuanlan.zhihu.com/p/69290203
+  
+* 学习流程
+
+** 机器学习基础
+
+*** SIFT特征与HOG特征的表达式与特性
+
+*** 最小二乘推导
+
+*** 逻辑回归推导
+
+[./algo-pic/logistic_regression.png]
+
+*** 二层神经网络bp算法推导
+
+[./algo-pic/bp.png]
+
+*** Softmax bp算法推导
+
+[./algo-pic/softmax.png]
+
+*** SVM算法推导
+
+*** AdaBoost算法推导
+
+[./algo-pic/adaboost.png]
+
+*** GBDT算法推导与特点
+
+** 计算机视觉
+
+** 自然语言处理
+
