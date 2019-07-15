@@ -9,6 +9,10 @@
 
 ** Attention 模型
 + [计算机视觉]深入理解Attention机制 https://blog.csdn.net/yideqianfenzhiyi/article/details/79422857
+  
+** 目标检测与目标跟踪
++ 目标跟踪简介 https://www.cnblogs.com/jjwu/p/8512730.html
++ CVPR2018 目标检测（object detection）算法总览 https://blog.csdn.net/niuxinzan/article/details/82107125
 
 * 自然语言处理
 
