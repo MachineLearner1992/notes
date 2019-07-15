@@ -1,5 +1,17 @@
 #+TITLE: 机器学习网上参考材料
 
+* 算法与数据结构
+
+** 动态规划
++ 动态规划经典题目汇总 https://blog.csdn.net/dengwei4321/article/details/14137295
++ 面试中的动态规划 https://blog.csdn.net/qq_15288217/article/details/80693352
++ 面试经典动态规划问题 https://blog.csdn.net/u013007900/article/details/56298701
+
+* 大数据框架
+
+** Flink技术关键
++ Flink案例代码，面试题 https://blog.csdn.net/qq_31866793/article/details/90755173
+
 * 机器学习基础 
 
 ** 综合机器学习
@@ -74,7 +86,6 @@
 *** GBDT算法推导与特点
 
 ** 计算机视觉
-
 
 ** 自然语言处理
 
