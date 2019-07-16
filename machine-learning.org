@@ -34,12 +34,20 @@
 
 * 计算机视觉
 
+** 卷积神经网络基础
++ 一文概览Inception家族的奋斗史 http://baijiahao.baidu.com/s?id=1601882944953788623&wfr=spider&for=pc
++ 卷积神经网络的感受野 https://zhuanlan.zhihu.com/p/44106492
+
 ** Attention 模型
 + [计算机视觉]深入理解Attention机制 https://blog.csdn.net/yideqianfenzhiyi/article/details/79422857
   
 ** 目标检测与目标跟踪
++ 一文读懂Faster RCNN https://zhuanlan.zhihu.com/p/31426458
++ 目标检测中的Anchor https://zhuanlan.zhihu.com/p/55824651
 + 目标跟踪简介 https://www.cnblogs.com/jjwu/p/8512730.html
 + CVPR2018 目标检测（object detection）算法总览 https://blog.csdn.net/niuxinzan/article/details/82107125
++ 非极大值抑制（合并抛弃重合选区间） https://www.cnblogs.com/makefile/p/nms.html
++ Anchor Boxes——目标检测质量的关键 https://baijiahao.baidu.com/s?id=1620728785393443256&wfr=spider&for=pc
 
 * 自然语言处理
 
@@ -76,6 +84,10 @@
 *** 二层神经网络bp算法推导
 
 [./algo-pic/bp.png]
+
+*** 循环神经网络bp公式推导
+
+*** LSTM公式推导
 
 *** Softmax bp算法推导
 
