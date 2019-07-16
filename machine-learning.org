@@ -6,11 +6,21 @@
 + 动态规划经典题目汇总 https://blog.csdn.net/dengwei4321/article/details/14137295
 + 面试中的动态规划 https://blog.csdn.net/qq_15288217/article/details/80693352
 + 面试经典动态规划问题 https://blog.csdn.net/u013007900/article/details/56298701
+  
+** 图搜索
++ 图/树——宽度优先搜索（BFS）https://blog.csdn.net/Echo1214_Xie/article/details/81672803
 
-* 大数据框架
+* 大数据技术 
 
 ** Flink技术关键
-+ Flink案例代码，面试题 https://blog.csdn.net/qq_31866793/article/details/90755173
++ 第一次有人把Apache Flink说的这么明白！ https://www.jianshu.com/p/c5949402134c
++ Flink案例代码，面试题 https://blog.csdn.net/qq_31866793/article/details/90755173 
+  
+** 推荐类算法
+
+*** 协同过滤
++ 基于物品的协同过滤算法(ItemCF) https://www.cnblogs.com/dtstack/p/10271551.html 
++ 推荐系统之基于用户的协同过滤算法（UserCF） https://blog.csdn.net/sinat_35866463/article/details/79428898
 
 * 机器学习基础 
 
@@ -34,9 +44,11 @@
 
 * 计算机视觉
 
-** 卷积神经网络基础
+** 卷积神经网络
 + 一文概览Inception家族的奋斗史 http://baijiahao.baidu.com/s?id=1601882944953788623&wfr=spider&for=pc
 + 卷积神经网络的感受野 https://zhuanlan.zhihu.com/p/44106492
++ 细粒度分类：双线性CNN https://zhuanlan.zhihu.com/p/62532887
++ 双线性池化（Bilinear Pooling）详解、改进及应用 https://zhuanlan.zhihu.com/p/62532887
 
 ** Attention 模型
 + [计算机视觉]深入理解Attention机制 https://blog.csdn.net/yideqianfenzhiyi/article/details/79422857
@@ -48,7 +60,7 @@
 + CVPR2018 目标检测（object detection）算法总览 https://blog.csdn.net/niuxinzan/article/details/82107125
 + 非极大值抑制（合并抛弃重合选区间） https://www.cnblogs.com/makefile/p/nms.html
 + Anchor Boxes——目标检测质量的关键 https://baijiahao.baidu.com/s?id=1620728785393443256&wfr=spider&for=pc
-
+  
 * 自然语言处理
 
 ** Language Model解析
@@ -57,6 +69,9 @@
 + Bag-of-words模型入门 https://zhuanlan.zhihu.com/p/29933242 
 + 理解 Word2Vec 之 Skip-Gram 模型 https://zhuanlan.zhihu.com/p/27234078
 
+
+** LDA模型
++ 自然语言处理基础与实战（8）- 主题模型LDA理解与应用 https://www.jianshu.com/p/74ec7d5f6821
 
 ** Attention 模型
 + 模型汇总24 - 深度学习中Attention Mechanism详细介绍：原理、分类及应用 https://zhuanlan.zhihu.com/p/31547842
@@ -70,6 +85,32 @@
 + Transformer结构及其应用详解--GPT、BERT、MT-DNN、GPT-2 https://zhuanlan.zhihu.com/p/69290203
   
 * 学习流程
+
+** 文本类题
++ 一面
+    1. 项目
+    2. 关键字怎么提取的，TF-IDF有改进么，怎么改进的
+    3. 命名实体怎么得到的，原理了解
+    4. LDA的原理是什么，使用了哪个框架
+    5. 狄利克雷分布能具体说说么
+    6. 深度学习了解么
+    7. RNN LSTM了解么
+    8. 有什么比较熟悉的算法
+    9. xgboost的原理
+    10. 有10个排好序的数据库，那么我要找整个的中位数，怎么找
+    11. 一个路口，一个小时通过一个车的概率是0.9，那么20分钟内通过车的概率是多少
+    12. 我有一个32位的id是唯一的，那么我想压缩一下，让他还唯一，怎么压缩
+
++ 二面
+    1. 项目
+    2. SVM原始问题为什么要转化为对偶问题，为什么对偶问题就好求解，原始问题不能求解么
+    3. K-means 中我想聚成100类 结果发现只能聚成98类，为什么
+    4. 进程中的内存分段是怎样的
+    5. 每个线程有哪些东西是自己独享的
+    6. 一枚不均匀的硬币，我抛了100次，有70次朝上，那么第101次朝上的概率是多少, 这个概率怎么样，公示是如何推导出来的
+    7. 给你个字符串，字符串是个数字，怎么转换为int型，不用库函数的话
+    8. 4个海盗，100个金币，每个人轮流提方案，如果你的方案有半数以上通过，那么久可以，否则就会被杀掉，如果你是第一个人，那么你怎么提方案比较好
+    9. 你的优点是什么
 
 ** 机器学习基础
 
@@ -101,7 +142,10 @@
 
 *** GBDT算法推导与特点
 
+*** 谱聚类的推导
+
 ** 计算机视觉
 
 ** 自然语言处理
+
 
