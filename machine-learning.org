@@ -21,20 +21,28 @@
 *** 协同过滤
 + 基于物品的协同过滤算法(ItemCF) https://www.cnblogs.com/dtstack/p/10271551.html 
 + 推荐系统之基于用户的协同过滤算法（UserCF） https://blog.csdn.net/sinat_35866463/article/details/79428898
++ 皮尔森相关性的相似度 https://blog.csdn.net/ifnoelse/article/details/7765984
 
 * 机器学习基础 
 
 ** 综合机器学习
 + 算法工程师养成记（附精选面试题）http://www.ijiandao.com/2b/baijia/157038.html
-
+  
 ** Adaboost 
 + 理解AdaBoost算法 https://www.itcodemonkey.com/article/8588.html
   
 ** 神经网络
+
+*** 神经网络的loss function与bp算法求导
 + 详解机器学习中的熵、条件熵、相对熵和交叉熵 https://www.cnblogs.com/kyrieng/p/8694705.html
 + softmax的log似然代价函数（公式求导）https://blog.csdn.net/u014313009/article/details/51045303
 + 卷积神经网络系列之softmax loss对输入的求导推导 https://blog.csdn.net/weixin_36411839/article/details/81835571
+  
+*** 神经网络梯度下降的方法
 
+*** Batch Normalization
++ 深入理解Batch Normalization批标准化 https://www.cnblogs.com/guoyaohua/p/8724433.html
+  
 ** SVM资料
 + SVM支持向量机-拉格朗日乘子与对偶问题（1）https://blog.csdn.net/bit_666/article/details/79865225
   
@@ -44,12 +52,24 @@
 
 * 计算机视觉
 
-** Attention 模型
-+ [计算机视觉]深入理解Attention机制 https://blog.csdn.net/yideqianfenzhiyi/article/details/79422857
-  
 ** 卷积神经网络
++ 一文概览Inception家族的奋斗史 http://baijiahao.baidu.com/s?id=1601882944953788623&wfr=spider&for=pc
++ 卷积神经网络的感受野 https://zhuanlan.zhihu.com/p/44106492
 + 细粒度分类：双线性CNN https://zhuanlan.zhihu.com/p/62532887
 + 双线性池化（Bilinear Pooling）详解、改进及应用 https://zhuanlan.zhihu.com/p/62532887
+
+** 视觉Attention模型
++ [计算机视觉]深入理解Attention机制 https://blog.csdn.net/yideqianfenzhiyi/article/details/79422857
+  
+** 目标检测与目标跟踪
++ 一文读懂Faster RCNN https://zhuanlan.zhihu.com/p/31426458
++ 目标检测中的Anchor https://zhuanlan.zhihu.com/p/55824651
++ 目标跟踪简介 https://www.cnblogs.com/jjwu/p/8512730.html
++ CVPR2018 目标检测（object detection）算法总览 https://blog.csdn.net/niuxinzan/article/details/82107125
++ 非极大值抑制（合并抛弃重合选区间） https://www.cnblogs.com/makefile/p/nms.html
++ Anchor Boxes——目标检测质量的关键 https://baijiahao.baidu.com/s?id=1620728785393443256&wfr=spider&for=pc
++ 如何应用MTCNN和FaceNet模型实现人脸检测及识别 https://cloud.tencent.com/developer/news/213743
++ CVPR2019目标检测方法进展综述 https://cloud.tencent.com/developer/article/1404879
   
 * 自然语言处理
 
@@ -59,11 +79,10 @@
 + Bag-of-words模型入门 https://zhuanlan.zhihu.com/p/29933242 
 + 理解 Word2Vec 之 Skip-Gram 模型 https://zhuanlan.zhihu.com/p/27234078
 
-
-** LDA模型
+** LDA主题模型
 + 自然语言处理基础与实战（8）- 主题模型LDA理解与应用 https://www.jianshu.com/p/74ec7d5f6821
 
-** Attention 模型
+** NLP Attention模型
 + 模型汇总24 - 深度学习中Attention Mechanism详细介绍：原理、分类及应用 https://zhuanlan.zhihu.com/p/31547842
 + 深度解析注意力模型(attention model) --- image_caption的应用 https://segmentfault.com/a/1190000011744246
 + 深度学习中的注意力模型（2017版）https://zhuanlan.zhihu.com/p/37601161
@@ -73,6 +92,8 @@
   
 ** 基于Attention的Transformer Model
 + Transformer结构及其应用详解--GPT、BERT、MT-DNN、GPT-2 https://zhuanlan.zhihu.com/p/69290203
++ 彻底搞懂BERT https://www.cnblogs.com/rucwxb/p/10277217.html
++ 5 分钟入门 Google 最强NLP模型：BERT https://www.jianshu.com/p/d110d0c13063
   
 * 学习流程
 
@@ -101,7 +122,12 @@
     7. 给你个字符串，字符串是个数字，怎么转换为int型，不用库函数的话
     8. 4个海盗，100个金币，每个人轮流提方案，如果你的方案有半数以上通过，那么久可以，否则就会被杀掉，如果你是第一个人，那么你怎么提方案比较好
     9. 你的优点是什么
-
+       
+** leetcode 问题题目
+1. 编程重点试一下
+   + 95: Unique Binary Search Trees II
+   + 96: Unique Binary Search Trees 
+       
 ** 机器学习基础
 
 *** SIFT特征与HOG特征的表达式与特性
@@ -115,6 +141,12 @@
 *** 二层神经网络bp算法推导
 
 [./algo-pic/bp.png]
+
+*** 循环神经网络bp公式推导
+
+*** BN层公式推导
+
+*** LSTM公式推导
 
 *** Softmax bp算法推导
 
@@ -130,8 +162,31 @@
 
 *** 谱聚类的推导
 
+*** PCA与LDA的推导
+
 ** 计算机视觉
++ BAT机器学习面试1000题系列（第1~305题）https://blog.csdn.net/v_JULY_v/article/details/78121924
++ 深度学习（计算机视觉）面试中问题（一） https://blog.csdn.net/comway_Li/article/details/82532573
++ 计算机视觉面试常见问题（含解答）https://blog.csdn.net/bluesliuf/article/details/89389117
 
 ** 自然语言处理
++ NLP面试(写的比较全面) https://blog.csdn.net/zongza/article/details/82952553
++ NLP面试 https://blog.csdn.net/qq_24831889/article/details/85876981
++ NLP面试 https://blog.csdn.net/zdz0200/article/details/82628732
++ NLP面试 https://blog.csdn.net/qq_28935065/article/details/79075048
 
+** 大数据方向:
 
+*** Flink方向技巧:
++ waltermark的定义
++ flatMap与map的区别是什么
++ kafka如何保证数据的有序，如果有数据乱序与延迟怎么办
++ 如何保证kafka高性能的消费
+
+*** Spark方向技巧:
++ 宽依赖，窄依赖
++ shuffle的原理
++ hdfs的原理
+
+*** 数据库方向:
++ 为什么业务里要使用es，es的优势在哪里：es查询比较灵活，并且可以有聚合操作
