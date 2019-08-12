@@ -70,6 +70,7 @@
 + Anchor Boxes——目标检测质量的关键 https://baijiahao.baidu.com/s?id=1620728785393443256&wfr=spider&for=pc
 + 如何应用MTCNN和FaceNet模型实现人脸检测及识别 https://cloud.tencent.com/developer/news/213743
 + CVPR2019目标检测方法进展综述 https://cloud.tencent.com/developer/article/1404879
++ 目标检测（一）——目标检测综述（持续更新中）https://blog.csdn.net/qq_35451572/article/details/80249259
   
 * 自然语言处理
 
