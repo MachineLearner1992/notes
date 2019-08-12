@@ -164,6 +164,9 @@
 *** PCA与LDA的推导
 
 ** 计算机视觉
++ BAT机器学习面试1000题系列（第1~305题）https://blog.csdn.net/v_JULY_v/article/details/78121924
++ 深度学习（计算机视觉）面试中问题（一） https://blog.csdn.net/comway_Li/article/details/82532573
++ 计算机视觉面试常见问题（含解答）https://blog.csdn.net/bluesliuf/article/details/89389117
 
 ** 自然语言处理
 + NLP面试(写的比较全面) https://blog.csdn.net/zongza/article/details/82952553
