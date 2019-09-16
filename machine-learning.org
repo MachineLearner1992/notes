@@ -72,6 +72,11 @@
 + CVPR2019目标检测方法进展综述 https://cloud.tencent.com/developer/article/1404879
 + 目标检测（一）——目标检测综述（持续更新中）https://blog.csdn.net/qq_35451572/article/details/80249259
   
+** 图像分割
++ 图像分割FCN到Dense CRF详细解释 https://zhuanlan.zhihu.com/p/22464594
++ DeepLab 语义分割模型 v1、v2、v3、v3+ 概要 https://zhuanlan.zhihu.com/p/68531147
++ Mask-RCNN算法精读 https://zhuanlan.zhihu.com/p/66973573 
+
 * 自然语言处理
 
 ** Language Model解析

@@ -9,6 +9,9 @@ git checkout -- . 为移除所有本地仓库里没有add的修改
 git clean -df 移除本地仓库里没有add的所有新增删除文件
 git rm --cached <file> untrack一个add在暂存区的文件
 git rm -r --cached <file> untrack一个add在暂存区的文件夹
+git tag -a v1.4 为分支打上相应的打标签
+git show v1.4 查看标签里的详细信息（包括commit信息等等）
+git tag 显示所有的标签版本号
 
 ** git查看提交历史与git版本回退
 git reset --hard commit_id 回退到相应的提交版本
