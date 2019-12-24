@@ -117,6 +117,11 @@ add the following parts in the root section of settings.json(in the workspace .v
    [./pic/apply-setting.png]
 5. 安装sogou拼音，下载deb包，sudo dpkg -i sogoupinyin_2.2.0.0108_amd64.deb
    
+** 4. 安装JDK8
++ sudo add-apt-repository ppa:webupd8team/java 将java加入源
++ sudo apt-get update 更新源
++ sudo apt-get install oracle-java8-installer 安装java8安装器
+   
 * Connecting to AliCloud
 
 ** ssh IP for Alicloud
