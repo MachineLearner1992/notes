@@ -1,0 +1,326 @@
+% Created 2019-09-16 一 09:29
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\author{king}
+\date{\today}
+\title{机器学习网上参考材料}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 25.2.2 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+\section{算法与数据结构}
+\label{sec-1}
+
+\subsection{动态规划}
+\label{sec-1-1}
+\begin{itemize}
+\item 动态规划经典题目汇总 \url{https://blog.csdn.net/dengwei4321/article/details/14137295}
+\item 面试中的动态规划 \url{https://blog.csdn.net/qq_15288217/article/details/80693352}
+\item 面试经典动态规划问题 \url{https://blog.csdn.net/u013007900/article/details/56298701}
+\end{itemize}
+
+\subsection{图搜索}
+\label{sec-1-2}
+\begin{itemize}
+\item 图/树——宽度优先搜索（BFS）\url{https://blog.csdn.net/Echo1214_Xie/article/details/81672803}
+\end{itemize}
+
+\section{大数据技术}
+\label{sec-2}
+
+\subsection{Flink技术关键}
+\label{sec-2-1}
+\begin{itemize}
+\item 第一次有人把Apache Flink说的这么明白！ \url{https://www.jianshu.com/p/c5949402134c}
+\item Flink案例代码，面试题 \url{https://blog.csdn.net/qq_31866793/article/details/90755173}
+\end{itemize}
+
+\subsection{推荐类算法}
+\label{sec-2-2}
+
+\subsubsection{协同过滤}
+\label{sec-2-2-1}
+\begin{itemize}
+\item 基于物品的协同过滤算法(ItemCF) \url{https://www.cnblogs.com/dtstack/p/10271551.html}
+\item 推荐系统之基于用户的协同过滤算法（UserCF） \url{https://blog.csdn.net/sinat_35866463/article/details/79428898}
+\item 皮尔森相关性的相似度 \url{https://blog.csdn.net/ifnoelse/article/details/7765984}
+\end{itemize}
+
+\section{机器学习基础}
+\label{sec-3}
+
+\subsection{综合机器学习}
+\label{sec-3-1}
+\begin{itemize}
+\item 算法工程师养成记（附精选面试题）\url{http://www.ijiandao.com/2b/baijia/157038.html}
+\end{itemize}
+
+\subsection{Adaboost}
+\label{sec-3-2}
+\begin{itemize}
+\item 理解AdaBoost算法 \url{https://www.itcodemonkey.com/article/8588.html}
+\end{itemize}
+
+\subsection{神经网络}
+\label{sec-3-3}
+
+\subsubsection{神经网络的loss function与bp算法求导}
+\label{sec-3-3-1}
+\begin{itemize}
+\item 详解机器学习中的熵、条件熵、相对熵和交叉熵 \url{https://www.cnblogs.com/kyrieng/p/8694705.html}
+\item softmax的log似然代价函数（公式求导）\url{https://blog.csdn.net/u014313009/article/details/51045303}
+\item 卷积神经网络系列之softmax loss对输入的求导推导 \url{https://blog.csdn.net/weixin_36411839/article/details/81835571}
+\end{itemize}
+
+\subsubsection{神经网络梯度下降的方法}
+\label{sec-3-3-2}
+
+\subsubsection{Batch Normalization}
+\label{sec-3-3-3}
+\begin{itemize}
+\item 深入理解Batch Normalization批标准化 \url{https://www.cnblogs.com/guoyaohua/p/8724433.html}
+\end{itemize}
+
+\subsection{SVM资料}
+\label{sec-3-4}
+\begin{itemize}
+\item SVM支持向量机-拉格朗日乘子与对偶问题（1）\url{https://blog.csdn.net/bit_666/article/details/79865225}
+\end{itemize}
+
+\subsection{统计资料}
+\label{sec-3-5}
+\begin{itemize}
+\item 统计学基础--假设检验 \url{https://blog.csdn.net/andy_shenzl/article/details/81453509}
+\item 统计学入门（7/7）——假设检验 \url{https://blog.csdn.net/Yi_jia_yi/article/details/81139679}
+\end{itemize}
+
+\section{计算机视觉}
+\label{sec-4}
+
+\subsection{卷积神经网络}
+\label{sec-4-1}
+\begin{itemize}
+\item 一文概览Inception家族的奋斗史 \url{http://baijiahao.baidu.com/s?id=1601882944953788623&wfr=spider&for=pc}
+\item 卷积神经网络的感受野 \url{https://zhuanlan.zhihu.com/p/44106492}
+\item 细粒度分类：双线性CNN \url{https://zhuanlan.zhihu.com/p/62532887}
+\item 双线性池化（Bilinear Pooling）详解、改进及应用 \url{https://zhuanlan.zhihu.com/p/62532887}
+\end{itemize}
+
+\subsection{视觉Attention模型}
+\label{sec-4-2}
+\begin{itemize}
+\item\relax [计算机视觉]深入理解Attention机制 \url{https://blog.csdn.net/yideqianfenzhiyi/article/details/79422857}
+\end{itemize}
+
+\subsection{目标检测与目标跟踪}
+\label{sec-4-3}
+\begin{itemize}
+\item 一文读懂Faster RCNN \url{https://zhuanlan.zhihu.com/p/31426458}
+\item 目标检测中的Anchor \url{https://zhuanlan.zhihu.com/p/55824651}
+\item 目标跟踪简介 \url{https://www.cnblogs.com/jjwu/p/8512730.html}
+\item CVPR2018 目标检测（object detection）算法总览 \url{https://blog.csdn.net/niuxinzan/article/details/82107125}
+\item 非极大值抑制（合并抛弃重合选区间） \url{https://www.cnblogs.com/makefile/p/nms.html}
+\item Anchor Boxes——目标检测质量的关键 \url{https://baijiahao.baidu.com/s?id=1620728785393443256&wfr=spider&for=pc}
+\item 如何应用MTCNN和FaceNet模型实现人脸检测及识别 \url{https://cloud.tencent.com/developer/news/213743}
+\item CVPR2019目标检测方法进展综述 \url{https://cloud.tencent.com/developer/article/1404879}
+\item 目标检测（一）——目标检测综述（持续更新中）\url{https://blog.csdn.net/qq_35451572/article/details/80249259}
+\end{itemize}
+
+\section{自然语言处理}
+\label{sec-5}
+
+\subsection{Language Model解析}
+\label{sec-5-1}
+\begin{itemize}
+\item 漫谈 Language Model (1): 原理篇 \url{http://blog.pluskid.org/?p=352}
+\item 深入理解语言模型 Language Model \url{https://zhuanlan.zhihu.com/p/52061158}
+\item Bag-of-words模型入门 \url{https://zhuanlan.zhihu.com/p/29933242}
+\item 理解 Word2Vec 之 Skip-Gram 模型 \url{https://zhuanlan.zhihu.com/p/27234078}
+\end{itemize}
+
+\subsection{LDA主题模型}
+\label{sec-5-2}
+\begin{itemize}
+\item 自然语言处理基础与实战（8）- 主题模型LDA理解与应用 \url{https://www.jianshu.com/p/74ec7d5f6821}
+\end{itemize}
+
+\subsection{NLP Attention模型}
+\label{sec-5-3}
+\begin{itemize}
+\item 模型汇总24 - 深度学习中Attention Mechanism详细介绍：原理、分类及应用 \url{https://zhuanlan.zhihu.com/p/31547842}
+\item 深度解析注意力模型(attention model) --- image$_{\text{caption的应用}}$ \url{https://segmentfault.com/a/1190000011744246}
+\item 深度学习中的注意力模型（2017版）\url{https://zhuanlan.zhihu.com/p/37601161}
+\item 干货｜如何在语言翻译中理解Attention Mechanism？ \url{http://www.sohu.com/a/156018349_642762}
+\item 计算机视觉与NLP结合解释Attention Model \url{https://zhuanlan.zhihu.com/p/56501461}
+\item 深入浅出，详细理解Attention Model的基本原理！ \url{https://www.jianshu.com/p/ff968920ec73}
+\end{itemize}
+
+\subsection{基于Attention的Transformer Model}
+\label{sec-5-4}
+\begin{itemize}
+\item Transformer结构及其应用详解--GPT、BERT、MT-DNN、GPT-2 \url{https://zhuanlan.zhihu.com/p/69290203}
+\item 彻底搞懂BERT \url{https://www.cnblogs.com/rucwxb/p/10277217.html}
+\item 5 分钟入门 Google 最强NLP模型：BERT \url{https://www.jianshu.com/p/d110d0c13063}
+\end{itemize}
+
+\section{学习流程}
+\label{sec-6}
+
+\subsection{文本类题}
+\label{sec-6-1}
+\begin{itemize}
+\item 一面
+\begin{enumerate}
+\item 项目
+\item 关键字怎么提取的，TF-IDF有改进么，怎么改进的
+\item 命名实体怎么得到的，原理了解
+\item LDA的原理是什么，使用了哪个框架
+\item 狄利克雷分布能具体说说么
+\item 深度学习了解么
+\item RNN LSTM了解么
+\item 有什么比较熟悉的算法
+\item xgboost的原理
+\item 有10个排好序的数据库，那么我要找整个的中位数，怎么找
+\item 一个路口，一个小时通过一个车的概率是0.9，那么20分钟内通过车的概率是多少
+\item 我有一个32位的id是唯一的，那么我想压缩一下，让他还唯一，怎么压缩
+\end{enumerate}
+
+\item 二面
+\begin{enumerate}
+\item 项目
+\item SVM原始问题为什么要转化为对偶问题，为什么对偶问题就好求解，原始问题不能求解么
+\item K-means 中我想聚成100类 结果发现只能聚成98类，为什么
+\item 进程中的内存分段是怎样的
+\item 每个线程有哪些东西是自己独享的
+\item 一枚不均匀的硬币，我抛了100次，有70次朝上，那么第101次朝上的概率是多少, 这个概率怎么样，公示是如何推导出来的
+\item 给你个字符串，字符串是个数字，怎么转换为int型，不用库函数的话
+\item 4个海盗，100个金币，每个人轮流提方案，如果你的方案有半数以上通过，那么久可以，否则就会被杀掉，如果你是第一个人，那么你怎么提方案比较好
+\item 你的优点是什么
+\end{enumerate}
+\end{itemize}
+
+\subsection{leetcode 问题题目}
+\label{sec-6-2}
+\begin{enumerate}
+\item 编程重点试一下
+\begin{itemize}
+\item 95: Unique Binary Search Trees II
+\item 96: Unique Binary Search Trees
+\end{itemize}
+\end{enumerate}
+
+\subsection{机器学习基础}
+\label{sec-6-3}
+
+\subsubsection{SIFT特征与HOG特征的表达式与特性}
+\label{sec-6-3-1}
+
+\subsubsection{最小二乘推导}
+\label{sec-6-3-2}
+
+\subsubsection{逻辑回归推导}
+\label{sec-6-3-3}
+
+[./algo-pic/logistic$_{\text{regression}}$.png]
+
+\subsubsection{二层神经网络bp算法推导}
+\label{sec-6-3-4}
+
+[./algo-pic/bp.png]
+
+\subsubsection{循环神经网络bp公式推导}
+\label{sec-6-3-5}
+
+\subsubsection{BN层公式推导}
+\label{sec-6-3-6}
+
+\subsubsection{LSTM公式推导}
+\label{sec-6-3-7}
+
+\subsubsection{Softmax bp算法推导}
+\label{sec-6-3-8}
+
+[./algo-pic/softmax.png]
+
+\subsubsection{SVM算法推导}
+\label{sec-6-3-9}
+
+\subsubsection{AdaBoost算法推导}
+\label{sec-6-3-10}
+
+[./algo-pic/adaboost.png]
+
+\subsubsection{GBDT算法推导与特点}
+\label{sec-6-3-11}
+
+\subsubsection{谱聚类的推导}
+\label{sec-6-3-12}
+
+\subsubsection{PCA与LDA的推导}
+\label{sec-6-3-13}
+
+\subsection{计算机视觉}
+\label{sec-6-4}
+\begin{itemize}
+\item BAT机器学习面试1000题系列（第1\textasciitilde{}305题）\url{https://blog.csdn.net/v_JULY_v/article/details/78121924}
+\item 深度学习（计算机视觉）面试中问题（一） \url{https://blog.csdn.net/comway_Li/article/details/82532573}
+\item 计算机视觉面试常见问题（含解答）\url{https://blog.csdn.net/bluesliuf/article/details/89389117}
+\end{itemize}
+
+\subsection{自然语言处理}
+\label{sec-6-5}
+\begin{itemize}
+\item NLP面试(写的比较全面) \url{https://blog.csdn.net/zongza/article/details/82952553}
+\item NLP面试 \url{https://blog.csdn.net/qq_24831889/article/details/85876981}
+\item NLP面试 \url{https://blog.csdn.net/zdz0200/article/details/82628732}
+\item NLP面试 \url{https://blog.csdn.net/qq_28935065/article/details/79075048}
+\end{itemize}
+
+\subsection{大数据方向:}
+\label{sec-6-6}
+
+\subsubsection{Flink方向技巧:}
+\label{sec-6-6-1}
+\begin{itemize}
+\item waltermark的定义
+\item flatMap与map的区别是什么
+\item kafka如何保证数据的有序，如果有数据乱序与延迟怎么办
+\item 如何保证kafka高性能的消费
+\end{itemize}
+
+\subsubsection{Spark方向技巧:}
+\label{sec-6-6-2}
+\begin{itemize}
+\item 宽依赖，窄依赖
+\item shuffle的原理
+\item hdfs的原理
+\end{itemize}
+
+\subsubsection{数据库方向:}
+\label{sec-6-6-3}
+\begin{itemize}
+\item 为什么业务里要使用es，es的优势在哪里：es查询比较灵活，并且可以有聚合操作
+\end{itemize}
+% Emacs 25.2.2 (Org mode 8.2.10)
+\end{document}
