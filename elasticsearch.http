@@ -1,0 +1,75 @@
+@host_name = http://localhost:9200
+
+###新增查看删除索引
+###新增一个叫future_test的索引
+PUT {{host_name}}/future_test HTTP/1.1
+
+###查看索引future_test信息
+GET {{host_name}}/future_test HTTP/1.1
+
+###查看所有的索引信息 
+GET {{host_name}}/_all HTTP/1.1
+
+###删除future_test索引
+DELETE {{host_name}}/future_test HTTP/1.1
+
+
+
+###为索引设置映射（设计数据格式与数据类型）
+###keyword数据类型为不可分词的字符串，text为可分词的字符串
+###2018-01-27T08:07:15.500+08:00（表示东八区，小数点后为毫秒数）；2018-01-27T00:07:15.500Z（表示零时区）
+PUT {{host_name}}/future_test/_mapping HTTP/1.1
+Content-Type: application/json
+
+{
+    "properties": {
+        "instrument_id": {
+            "type": "text"
+        },
+        "price": {
+            "type": "float"
+        }, 
+        "date_time": {
+            "type":"date"
+        }, 
+        "volume": {
+            "type": "integer" 
+        }
+    }
+} 
+
+###获得指定索引的映射
+GET {{host_name}}/future_test/_mapping HTTP/1.1
+
+###获得所有索引的映射
+GET {{host_name}}/_all/_mapping HTTP/1.1
+
+
+
+###数据的增删改 
+###新增一条数据（文档），设置refresh=true是为了让写入一秒延迟如果查询的话立即更新，数据的_id为instrument_id-毫秒时间戳
+PUT {{host_name}}/future_test/_doc/cu2012-1580358096500?refresh=true HTTP/1.1
+Content-Type: application/json
+
+{
+    "instrument_id": "cu2012",
+    "price": 20000.35,
+    "date_time": "2020-01-30T12:21:36.500+08:00",
+    "volume": 1000
+}
+
+###修改文档
+POST {{host_name}}/future_test/_update/cu2012-1580358096500 HTTP/1.1
+Content-Type: application/json
+
+{
+    "doc": {
+        "instrument_id": "cu2012",
+        "price": 20000.35,
+        "date_time": "2020-01-30T12:21:36.500+08:00",
+        "volume": 1000
+    }
+}
+
+###删除文档
+DELETE {{host_name}}/future_test/_doc/cu2012-1580358096500?refresh=true HTTP/1.1

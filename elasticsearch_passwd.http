@@ -1,0 +1,53 @@
+@host_name = localhost:9200
+
+###创建拥有不同权利的角色
+###创建角色test_role拥有所有权力
+POST {{host_name}}/_security/role/test_role HTTP/1.1
+Content-Type: application/json
+
+{
+  "cluster": ["all"],
+  "indices": [
+    {
+      "names": [ "test" ],
+      "privileges": ["all"]
+    }
+  ]
+}
+
+###创建角色test_read_role拥有只读权力
+POST {{host_name}}/_security/role/test_read_role HTTP/1.1
+Content-Type: application/json
+
+{
+  "cluster": ["all"],
+  "indices": [
+    {
+      "names": [ "test" ],
+      "privileges": ["read"]
+    }
+  ]
+}
+
+###创建用户并配置角色
+###创建用户mengyuan是拥有所有权限的角色
+POST {{host_name}}/_security/user/mengyuan HTTP/1.1
+Content-Type: application/json
+
+{
+  "password" : "123456",
+  "roles" : [ "test_role" ],
+  "full_name" : "memory",
+  "email" : "fuhao@example.com"
+}
+
+###创建用户mengyuan_read是拥有只读权力的角色
+POST {{host_name}}/_security/user/mengyuan_read HTTP/1.1
+Content-Type: application/json
+
+{
+  "password" : "123456",
+  "roles" : [ "test_read_role" ],
+  "full_name" : "memory2",
+  "email" : "fuhao@example.com"
+}

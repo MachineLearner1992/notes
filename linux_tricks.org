@@ -121,6 +121,37 @@ add the following parts in the root section of settings.json(in the workspace .v
 + sudo add-apt-repository ppa:webupd8team/java 将java加入源
 + sudo apt-get update 更新源
 + sudo apt-get install oracle-java8-installer 安装java8安装器
+  
+* elasticsearch 技巧
+
+** 安装配置elasticsearch
+1. 下载elasticsearch的deb包，dpkg -i elasticsearch*.deb 安装elasticsearch
+2. 到/etc/elasticsearch/elasticsearch.yml里配置, 进/etc/elasticsearch目录前要sudo -i进入root模式
+   + 修改path.data与path.logs到指定路径
+   + 在云端服务器配置时，将bootstrap.memory_lock设置为bootstrap.memory_lock: false让elasticsearch获得最大的内存权限
+   + 在云端服务器配置时，将network.host设为本机地址
+   + 在云端服务器配置时，将http.port设为9200
+3. 每一次重启机器以后都要输入(如果需要高性能的时候)sysctl -w vm.max_map_count=262144临时修改jvm的默认最大线程数
+4. 第一次安装的时候输入systemctl enable elasticsearch.service注册服务
+5. 每一次重启机器以后都要输入systemctl start elasticsearch.service开启elasticsearch服务
+6. 如果需要安装插件，sudo -i进入root模式，进入/usr/share/elasticsearch/bin文件，运行./elasticsearch-plugin install [puglin-name]
+   
+** 为elasticsearch配置密码
+1. 修改/etc/elasticsearch/elasticsearch.yml配置文件，最后添加:
+   + xpack.security.enabled: true
+   + xpack.security.transport.ssl.enabled: true
+   + xpack.security.transport.ssl.verification_mode: certificate
+   + xpack.security.transport.ssl.keystore.path: elastic-certificates.p12
+   + xpack.security.transport.ssl.truststore.path: elastic-certificates.p12
+2. 重新启动elasticsearch
+3. 进入/usr/share/elasticsearch/bin文件，运行./elasticsearch-setup-passwords interactive设置整个elasticsearch的密码
+4. 为索引创建权限角色与用户
+   1. 创建具有不同权利的角色，具体配置角色的方式详见elasticsearch_passwd.http文件，文件用vscode的restclient打开
+   2. 创建属于不同角色的用户，具体创建用户的方式详见elasticsearch_passwd.http文件，文件用vscode的restclient打开 
+   
+** elasticsearch的索引建立与增删改查 
+详细过程见elasticsearch.http文件
+
    
 * Connecting to AliCloud
 
